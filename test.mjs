@@ -1,8 +1,8 @@
 // Microsaas Package: A Basic Implementation
 
 // Step 1: Dependencies
-const fs = require('fs');
-const path = require('path');
+import fs from "fs";
+import path from "path";
 
 // Step 2: Constants for Directory and File Templates
 const INSTRUCTIONS_DIR = 'instructions';
@@ -35,7 +35,7 @@ function createFile(filePath, content) {
 }
 
 // Step 4: Main Function
-function initializeMicrosaas() {
+export function initializeMicrosaas() {
   console.log('Initializing project with instructions...');
 
   // Create instructions directory
@@ -49,8 +49,3 @@ function initializeMicrosaas() {
 
   console.log('Project initialized successfully!');
 }
-
-// Export the function for external usage
-module.exports = {
-  initializeMicrosaas
-};

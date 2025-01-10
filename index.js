@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { initializeMicrosaas } from "./test.js";
+import { initializeMicrosaas } from "./test.mjs";
 
 initializeMicrosaas();
