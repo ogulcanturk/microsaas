@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log("microsaas!");
+import { initializeMicrosaas } from "./test.js";
+
+initializeMicrosaas();
